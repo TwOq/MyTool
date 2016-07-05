@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "NSString+Implementation.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *string = @"123^";
+    NSLog(@"%@",string);
+
+    NSString *newString = string.urlEncodedString;
+    NSLog(@"%@",newString);
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

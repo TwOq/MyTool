@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662B48C91D2B6559005F2F29 /* LQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 662B48C81D2B6559005F2F29 /* LQTextField.m */; };
+		662B48CC1D2B7D47005F2F29 /* LQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 662B48CB1D2B7D47005F2F29 /* LQButton.m */; };
 		666621571D180B40009019F7 /* LQFileManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 666621561D180B40009019F7 /* LQFileManagerTool.m */; };
 		666AB2D61D1A63CD000507B8 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 666AB2D51D1A63CD000507B8 /* UIView+Extension.m */; };
 		667DC6A31D19182B000AC396 /* LQKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 667DC6A21D19182B000AC396 /* LQKeyboardTool.m */; };
@@ -50,6 +52,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		662B48C71D2B6559005F2F29 /* LQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTextField.h; sourceTree = "<group>"; };
+		662B48C81D2B6559005F2F29 /* LQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTextField.m; sourceTree = "<group>"; };
+		662B48CA1D2B7D47005F2F29 /* LQButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQButton.h; sourceTree = "<group>"; };
+		662B48CB1D2B7D47005F2F29 /* LQButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQButton.m; sourceTree = "<group>"; };
 		666621551D180B40009019F7 /* LQFileManagerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFileManagerTool.h; sourceTree = "<group>"; };
 		666621561D180B40009019F7 /* LQFileManagerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFileManagerTool.m; sourceTree = "<group>"; };
 		666AB2D41D1A63CD000507B8 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -301,6 +307,10 @@
 		66E3225B1D13A6E400064D07 /* ViewTool */ = {
 			isa = PBXGroup;
 			children = (
+				662B48CA1D2B7D47005F2F29 /* LQButton.h */,
+				662B48CB1D2B7D47005F2F29 /* LQButton.m */,
+				662B48C71D2B6559005F2F29 /* LQTextField.h */,
+				662B48C81D2B6559005F2F29 /* LQTextField.m */,
 				66E3225C1D13A6E400064D07 /* LQActivityIndicatorView.h */,
 				66E3225D1D13A6E400064D07 /* LQActivityIndicatorView.m */,
 				66E3225E1D13A6E400064D07 /* ScanCodeView.h */,
@@ -391,6 +401,7 @@
 				66E3221C1D13932E00064D07 /* UIImage+WebP.m in Sources */,
 				666AB2D61D1A63CD000507B8 /* UIView+Extension.m in Sources */,
 				66E322321D13A07F00064D07 /* AESCrypt.m in Sources */,
+				662B48C91D2B6559005F2F29 /* LQTextField.m in Sources */,
 				667DC6AC1D1940D0000AC396 /* LDNetGetAddress.m in Sources */,
 				66E322191D13932E00064D07 /* UIButton+WebCache.m in Sources */,
 				66E3224C1D13A6D700064D07 /* NSString+Implementation.m in Sources */,
@@ -410,6 +421,7 @@
 				66E3221B1D13932E00064D07 /* UIImage+MultiFormat.m in Sources */,
 				66E322181D13932E00064D07 /* SDWebImagePrefetcher.m in Sources */,
 				66E322101D13932E00064D07 /* MKAnnotationView+WebCache.m in Sources */,
+				662B48CC1D2B7D47005F2F29 /* LQButton.m in Sources */,
 				66E3221E1D13932E00064D07 /* UIImageView+WebCache.m in Sources */,
 				66E322631D13A6E400064D07 /* ScanCodeView.m in Sources */,
 				66E3221F1D13932E00064D07 /* UIView+WebCacheOperation.m in Sources */,
