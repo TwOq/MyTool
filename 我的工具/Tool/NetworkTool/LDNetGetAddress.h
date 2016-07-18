@@ -38,7 +38,6 @@ typedef enum {
  */
 + (NSArray *)getDNSsWithDormain:(NSString *)hostName;
 
-
 /*!
  * 获取当前网络类型
  */

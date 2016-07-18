@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6622E3031D3CA54F005104C0 /* LQSingleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6622E3021D3CA54F005104C0 /* LQSingleClass.m */; };
+		6622E3071D3CA85C005104C0 /* LQSingleClassTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6622E3061D3CA85C005104C0 /* LQSingleClassTest.m */; };
 		662B48C91D2B6559005F2F29 /* LQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 662B48C81D2B6559005F2F29 /* LQTextField.m */; };
 		662B48CC1D2B7D47005F2F29 /* LQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 662B48CB1D2B7D47005F2F29 /* LQButton.m */; };
+		666504431D2CAD360073752B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666504421D2CAD360073752B /* Accelerate.framework */; };
 		666621571D180B40009019F7 /* LQFileManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 666621561D180B40009019F7 /* LQFileManagerTool.m */; };
 		666AB2D61D1A63CD000507B8 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 666AB2D51D1A63CD000507B8 /* UIView+Extension.m */; };
 		667DC6A31D19182B000AC396 /* LQKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 667DC6A21D19182B000AC396 /* LQKeyboardTool.m */; };
 		667DC6AC1D1940D0000AC396 /* LDNetGetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 667DC6AA1D1940D0000AC396 /* LDNetGetAddress.m */; };
+		66D5434B1D387B770010591B /* LQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D5434A1D387B770010591B /* LQModel.m */; };
+		66DF9B391D37285500C6E186 /* LQEmojiTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF9B381D37285500C6E186 /* LQEmojiTool.m */; };
+		66DF9B3B1D37746C00C6E186 /* NSDictionary+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DF9B3A1D37746C00C6E186 /* NSDictionary+Log.m */; };
 		66E321BD1D1391B900064D07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E321BC1D1391B900064D07 /* main.m */; };
 		66E321C01D1391B900064D07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E321BF1D1391B900064D07 /* AppDelegate.m */; };
 		66E321C31D1391B900064D07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E321C21D1391B900064D07 /* ViewController.m */; };
@@ -51,11 +57,27 @@
 		66E322671D13D63300064D07 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E322661D13D63300064D07 /* NSDate+Helper.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		664254411D3885470063AFDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66E321B01D1391B900064D07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66E321B71D1391B900064D07;
+			remoteInfo = "我的工具";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6622E3011D3CA54F005104C0 /* LQSingleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSingleClass.h; sourceTree = "<group>"; };
+		6622E3021D3CA54F005104C0 /* LQSingleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSingleClass.m; sourceTree = "<group>"; };
+		6622E3061D3CA85C005104C0 /* LQSingleClassTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSingleClassTest.m; sourceTree = "<group>"; };
 		662B48C71D2B6559005F2F29 /* LQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTextField.h; sourceTree = "<group>"; };
 		662B48C81D2B6559005F2F29 /* LQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTextField.m; sourceTree = "<group>"; };
 		662B48CA1D2B7D47005F2F29 /* LQButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQButton.h; sourceTree = "<group>"; };
 		662B48CB1D2B7D47005F2F29 /* LQButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQButton.m; sourceTree = "<group>"; };
+		6642543C1D3885470063AFDF /* 我的工具Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "我的工具Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		664254401D3885470063AFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		666504421D2CAD360073752B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		666621551D180B40009019F7 /* LQFileManagerTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFileManagerTool.h; sourceTree = "<group>"; };
 		666621561D180B40009019F7 /* LQFileManagerTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFileManagerTool.m; sourceTree = "<group>"; };
 		666AB2D41D1A63CD000507B8 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -65,6 +87,11 @@
 		667DC6A91D1940D0000AC396 /* LDNetGetAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetGetAddress.h; sourceTree = "<group>"; };
 		667DC6AA1D1940D0000AC396 /* LDNetGetAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetGetAddress.m; sourceTree = "<group>"; };
 		667DC6AB1D1940D0000AC396 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		66D543491D387B770010591B /* LQModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQModel.h; sourceTree = "<group>"; };
+		66D5434A1D387B770010591B /* LQModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQModel.m; sourceTree = "<group>"; };
+		66DF9B371D37285500C6E186 /* LQEmojiTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQEmojiTool.h; sourceTree = "<group>"; };
+		66DF9B381D37285500C6E186 /* LQEmojiTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQEmojiTool.m; sourceTree = "<group>"; };
+		66DF9B3A1D37746C00C6E186 /* NSDictionary+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Log.m"; sourceTree = "<group>"; };
 		66E321B81D1391B900064D07 /* 我的工具.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我的工具.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66E321BC1D1391B900064D07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66E321BE1D1391B900064D07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -140,16 +167,33 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		66E321B51D1391B900064D07 /* Frameworks */ = {
+		664254391D3885470063AFDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66E321B51D1391B900064D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				666504431D2CAD360073752B /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6642543D1D3885470063AFDF /* 我的工具Tests */ = {
+			isa = PBXGroup;
+			children = (
+				664254401D3885470063AFDF /* Info.plist */,
+				6622E3061D3CA85C005104C0 /* LQSingleClassTest.m */,
+			);
+			path = "我的工具Tests";
+			sourceTree = "<group>";
+		};
 		667DC6A41D193F49000AC396 /* NetworkTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,10 +204,21 @@
 			path = NetworkTool;
 			sourceTree = "<group>";
 		};
+		66D543481D387B630010591B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66D543491D387B770010591B /* LQModel.h */,
+				66D5434A1D387B770010591B /* LQModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		66E321AF1D1391B900064D07 = {
 			isa = PBXGroup;
 			children = (
+				666504421D2CAD360073752B /* Accelerate.framework */,
 				66E321BA1D1391B900064D07 /* 我的工具 */,
+				6642543D1D3885470063AFDF /* 我的工具Tests */,
 				66E321B91D1391B900064D07 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -172,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				66E321B81D1391B900064D07 /* 我的工具.app */,
+				6642543C1D3885470063AFDF /* 我的工具Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +261,7 @@
 		66E321D21D13920200064D07 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				66D543481D387B630010591B /* Model */,
 				667DC6A41D193F49000AC396 /* NetworkTool */,
 				66E3225B1D13A6E400064D07 /* ViewTool */,
 				66E322501D13A6DF00064D07 /* ClassTool */,
@@ -270,6 +327,7 @@
 		66E322431D13A6D700064D07 /* CategoryTool */ = {
 			isa = PBXGroup;
 			children = (
+				66DF9B3A1D37746C00C6E186 /* NSDictionary+Log.m */,
 				666AB2D41D1A63CD000507B8 /* UIView+Extension.h */,
 				666AB2D51D1A63CD000507B8 /* UIView+Extension.m */,
 				66E322651D13D63300064D07 /* NSDate+Helper.h */,
@@ -300,6 +358,10 @@
 				66E322551D13A6DF00064D07 /* LQDateTool.h */,
 				66E322561D13A6DF00064D07 /* LQDateTool.m */,
 				66E322571D13A6DF00064D07 /* LQDefineTool.h */,
+				66DF9B371D37285500C6E186 /* LQEmojiTool.h */,
+				66DF9B381D37285500C6E186 /* LQEmojiTool.m */,
+				6622E3011D3CA54F005104C0 /* LQSingleClass.h */,
+				6622E3021D3CA54F005104C0 /* LQSingleClass.m */,
 			);
 			path = ClassTool;
 			sourceTree = "<group>";
@@ -324,6 +386,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6642543B1D3885470063AFDF /* 我的工具Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664254451D3885480063AFDF /* Build configuration list for PBXNativeTarget "我的工具Tests" */;
+			buildPhases = (
+				664254381D3885470063AFDF /* Sources */,
+				664254391D3885470063AFDF /* Frameworks */,
+				6642543A1D3885470063AFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				664254421D3885470063AFDF /* PBXTargetDependency */,
+			);
+			name = "我的工具Tests";
+			productName = "我的工具Tests";
+			productReference = 6642543C1D3885470063AFDF /* 我的工具Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		66E321B71D1391B900064D07 /* 我的工具 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66E321CF1D1391B900064D07 /* Build configuration list for PBXNativeTarget "我的工具" */;
@@ -350,6 +430,10 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = zqLee;
 				TargetAttributes = {
+					6642543B1D3885470063AFDF = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 66E321B71D1391B900064D07;
+					};
 					66E321B71D1391B900064D07 = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -369,11 +453,19 @@
 			projectRoot = "";
 			targets = (
 				66E321B71D1391B900064D07 /* 我的工具 */,
+				6642543B1D3885470063AFDF /* 我的工具Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6642543A1D3885470063AFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66E321B61D1391B900064D07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,10 +479,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		664254381D3885470063AFDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6622E3071D3CA85C005104C0 /* LQSingleClassTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		66E321B41D1391B900064D07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D5434B1D387B770010591B /* LQModel.m in Sources */,
 				66E322621D13A6E400064D07 /* LQActivityIndicatorView.m in Sources */,
 				66E321C31D1391B900064D07 /* ViewController.m in Sources */,
 				667DC6A31D19182B000AC396 /* LQKeyboardTool.m in Sources */,
@@ -398,6 +499,8 @@
 				66E322581D13A6DF00064D07 /* LQCheckTool.m in Sources */,
 				66E322341D13A07F00064D07 /* NSData+CommonCrypto.m in Sources */,
 				66E3225A1D13A6DF00064D07 /* LQDateTool.m in Sources */,
+				6622E3031D3CA54F005104C0 /* LQSingleClass.m in Sources */,
+				66DF9B391D37285500C6E186 /* LQEmojiTool.m in Sources */,
 				66E3221C1D13932E00064D07 /* UIImage+WebP.m in Sources */,
 				666AB2D61D1A63CD000507B8 /* UIView+Extension.m in Sources */,
 				66E322321D13A07F00064D07 /* AESCrypt.m in Sources */,
@@ -428,12 +531,21 @@
 				666621571D180B40009019F7 /* LQFileManagerTool.m in Sources */,
 				66E322171D13932E00064D07 /* SDWebImageManager.m in Sources */,
 				66E321BD1D1391B900064D07 /* main.m in Sources */,
+				66DF9B3B1D37746C00C6E186 /* NSDictionary+Log.m in Sources */,
 				66E322671D13D63300064D07 /* NSDate+Helper.m in Sources */,
 				66E3224E1D13A6D700064D07 /* UIImage+Implementation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		664254421D3885470063AFDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66E321B71D1391B900064D07 /* 我的工具 */;
+			targetProxy = 664254411D3885470063AFDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		66E321C41D1391B900064D07 /* Main.storyboard */ = {
@@ -455,6 +567,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		664254431D3885480063AFDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "我的工具Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zqLee.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/我的工具.app/我的工具";
+			};
+			name = Debug;
+		};
+		664254441D3885480063AFDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "我的工具Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zqLee.----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/我的工具.app/我的工具";
+			};
+			name = Release;
+		};
 		66E321CD1D1391B900064D07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -566,6 +702,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		664254451D3885480063AFDF /* Build configuration list for PBXNativeTarget "我的工具Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664254431D3885480063AFDF /* Debug */,
+				664254441D3885480063AFDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		66E321B31D1391B900064D07 /* Build configuration list for PBXProject "我的工具" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

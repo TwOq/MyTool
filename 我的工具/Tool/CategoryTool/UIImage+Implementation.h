@@ -34,6 +34,8 @@
 + (UIImage *)cropEqualScaleFromOriginalImage:(UIImage *) originalImage ToSize:(CGSize)size;
 //固定尺寸缩放，可能存在图片拉伸
 + (UIImage *)cropEqualScaleFromOriginalImage:(UIImage *)originalImage ToFixedSize:(CGSize)size;
+//生成一张高斯模糊的图片   blur  模糊程度 (0~1)
++ (UIImage *)blurImage:(UIImage *)image blur:(CGFloat)blur;
 
 
 @end
