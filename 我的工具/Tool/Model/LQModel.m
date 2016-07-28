@@ -7,57 +7,106 @@
 //
 
 #import "LQModel.h"
+#import "LQDefineTool.h"
 #import <objc/runtime.h>
+#import <objc/message.h>
 
 @implementation LQModel
-// 返回self的所有对象名称
-+ (NSArray *)propertyOfSelf{
-    unsigned int count = 0;
 
+
+
+#pragma mark 公有方法
+
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary {
+    self = [super init];
+    if (self) {
+        [self setValueForKeyWithDictionary:dictionary];
+    }
+    return self;
+}
+
+- (NSDictionary *)dictionaryFromModel {
+    __block NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:0];
+    LQWeakSelf(self)
+    [[super class] propertyHandel:^(NSString *propertyName) {
+
+        [dic setValue:[NSString stringWithFormat:@"%@", [weakself valueForKey:propertyName]] forKey:propertyName];
+    }];
+    return dic.mutableCopy;
+}
+
+#pragma mark NSCoding 协议方法
+
+// 归档
+- (void)encodeWithCoder:(NSCoder *)enCoder{
+
+    LQWeakSelf(self)
+    [[self class] propertyHandel:^(NSString *propertyName) {
+        [enCoder encodeObject:[weakself valueForKey:propertyName] forKey:propertyName];
+    }];
+}
+
+// 解档
+- (id)initWithCoder:(NSCoder *)aDecoder{
+
+    LQWeakSelf(self)
+    [[self class] propertyHandel:^(NSString *propertyName) {
+        [weakself setValue:[aDecoder decodeObjectForKey:propertyName] forKey:propertyName];
+    }];
+    return  self;
+}
+
+#pragma mark 私有方法
+
++ (void)propertyHandel:(void(^)(NSString *))block {
+    unsigned int count = 0;
     // 1. 获得类中的所有成员变量
     Ivar *ivarList = class_copyIvarList(self, &count);
-
-    NSMutableArray *properNames =[NSMutableArray array];
     for (int i = 0; i < count; i++) {
         Ivar ivar = ivarList[i];
         // 获得成员属性名
         NSString *name = [NSString stringWithUTF8String:ivar_getName(ivar)];
         // 除去下划线，从第一个角标开始截取
         NSString *key = [name substringFromIndex:1];
-        [properNames addObject:key];
+        block(key);
     }
     free(ivarList);
-    return [properNames copy];
 }
 
-// 归档
-- (void)encodeWithCoder:(NSCoder *)enCoder{
-    // 取得所有成员变量名
-    NSArray *properNames = [[self class] propertyOfSelf];
-    for (NSString *propertyName in properNames) {
-        [enCoder encodeObject:[self valueForKey:propertyName] forKey:propertyName];
-    }
+- (void)setValueForKeyWithDictionary:(NSDictionary *)dictionary{
+
+    LQWeakSelf(self)
+    [[self class] propertyHandel:^(NSString *objcString) {
+        id value = dictionary[objcString];
+        objcString = [weakself getSetter:objcString];
+        if ([value isKindOfClass:[NSNumber class]]) {
+            value = [NSString stringWithFormat:@"%@",value];
+            objc_msgSend(weakself,NSSelectorFromString(objcString),value);
+        }else if ([value isKindOfClass:[NSNull class]]){
+            objc_msgSend(weakself, NSSelectorFromString(objcString),@"");
+        }else{
+            objc_msgSend(weakself, NSSelectorFromString(objcString),value);
+        }
+    }];
 }
 
-// 解档
-- (id)initWithCoder:(NSCoder *)aDecoder{
-    // 取得所有成员变量名
-    NSArray *properNames = [[self class] propertyOfSelf];
-    for (NSString *propertyName in properNames) {
-        [self setValue:[aDecoder decodeObjectForKey:propertyName] forKey:propertyName];
-    }
-    return  self;
+- (NSString *)getSetter:(NSString *)key {
+
+    NSString *firstChar = [key substringWithRange:NSMakeRange(0, 1)];
+    firstChar = firstChar.uppercaseString;
+    key = [key stringByReplacingCharactersInRange:NSMakeRange(0, 1)
+                                       withString:[NSString stringWithFormat:@"set%@",firstChar]];
+    return [key stringByAppendingString:@":"];;
 }
 
 - (NSString *)description{
-    NSMutableString *descriptionString = [NSMutableString stringWithFormat:@"\n"];
-    // 取得所有成员变量名
-    NSArray *properNames = [[self class] propertyOfSelf];
-    for (NSString *propertyName in properNames) {
-        NSString *propertyNameString = [NSString stringWithFormat:@"%@ - %@\n",propertyName,[self valueForKey:propertyName]];
-        [descriptionString appendString:propertyNameString];
-    }
 
+    __block NSMutableString *descriptionString = [NSMutableString stringWithFormat:@"\n"];
+    LQWeakSelf(self)
+    [[self class] propertyHandel:^(NSString *propertyName) {
+        NSString *propertyNameString = [NSString stringWithFormat:@"%@ - %@\n",propertyName,[weakself valueForKey:propertyName]];
+        [descriptionString appendString:propertyNameString];
+    }];
     return [descriptionString copy];
 }
 

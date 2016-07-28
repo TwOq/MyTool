@@ -75,7 +75,7 @@
     return [self getTotalSizeInDirection:directoryPath];
 }
 
-+ (float)getTotalSizeInDirection:(NSString *)directoryPath{
++ (float)getTotalSizeInDirection:(NSString *)directoryPath {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error = nil;
     float size = 0;

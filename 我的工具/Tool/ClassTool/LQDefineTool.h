@@ -43,7 +43,7 @@
 #endif
 
 //弱引用/强引用
-#define LQWeakSelf(type)            __weak typeof(type) weak##type = type;
+#define LQWeakSelf(type)            __block __weak typeof(type) weak##type = type;
 #define LQStrongSelf(type)          __strong typeof(type) type = weak##type;
 
 //由角度转换弧度 由弧度转换角度
@@ -63,3 +63,11 @@
 //通知中心
 #define LQNotificationCenter        [NSNotificationCenter defaultCenter]
 
+/** 快速查询一段代码的执行时间 */
+/** 用法
+ TICK
+ do your work here
+ TOCK
+ */
+#define TICK NSDate *startTime = [NSDate date];
+#define TOCK NSLog(@"Time:%f", -[startTime timeIntervalSinceNow]);

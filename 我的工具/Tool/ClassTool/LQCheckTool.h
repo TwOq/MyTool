@@ -19,5 +19,7 @@
 + (NSString *)checkMobileNumber:(NSString *)mobile;
 //验证用户密码6-18位数字和字母组合
 + (BOOL)checkPassword:(NSString*)password;
+//某个字符串是否匹配某个条件
++ (BOOL)checkString:(NSString *)string withPatten:(NSString *)pattern;
 
 @end

@@ -85,4 +85,11 @@
     return isMatch;
 }
 
++ (BOOL)checkString:(NSString *)string withPatten:(NSString *)pattern {
+
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",pattern];
+    BOOL isMatch = [pred evaluateWithObject:string];
+    return isMatch;
+}
+
 @end
