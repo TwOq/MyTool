@@ -1,20 +1,19 @@
 //
-//  LQRunTimeToolTest.m
+//  LQnormalTest.m
 //  我的工具
 //
-//  Created by lizq on 16/7/27.
+//  Created by lizq on 16/7/28.
 //  Copyright © 2016年 zqLee. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
-#import "LQRunTimeTool.h"
-#import <MapKit/MapKit.h>
+#import "IDTool.h"
 
-@interface LQRunTimeToolTest : XCTestCase
+@interface LQnormalTest : XCTestCase
 
 @end
 
-@implementation LQRunTimeToolTest
+@implementation LQnormalTest
 
 - (void)setUp {
     [super setUp];
@@ -26,15 +25,10 @@
     [super tearDown];
 }
 
-- (void)testIvar {
+- (void)testID {
 
-    [LQRunTimeTool printClassIvars:[MKPolylineRenderer class]];
 
-}
-
-- (void)testMethod {
-
-    [LQRunTimeTool printClassMethods:[MKOverlayPathRenderer class]];
+    XCTAssertEqual(1, [IDTool validateIDCardNumber:@"50010219907295531"]);
 
 }
 

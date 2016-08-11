@@ -9,8 +9,55 @@
 #import "UIColor+hex.h"
 
 @implementation UIColor (hex)
-+ (UIColor *)colorWithHexString:(NSString *)color
-{
+
+- (float)r {
+    NSString *RGBValue = [NSString stringWithFormat:@"%@",self];
+    //将RGB值描述分隔成字符串
+    NSArray *RGBArr = [RGBValue componentsSeparatedByString:@" "];
+    if (RGBArr.count == 3) {
+        return 0.0;
+    }
+    float colorR = ((NSString *)RGBArr[1]).floatValue;
+    return colorR;
+}
+
+- (float)g {
+    NSString *RGBValue = [NSString stringWithFormat:@"%@",self];
+    //将RGB值描述分隔成字符串
+    NSArray *RGBArr = [RGBValue componentsSeparatedByString:@" "];
+    if (RGBArr.count == 3) {
+        return 0.0;
+    }
+    float colorG = ((NSString *)RGBArr[2]).floatValue;
+    return colorG;
+}
+
+- (float)b {
+    NSString *RGBValue = [NSString stringWithFormat:@"%@",self];
+    //将RGB值描述分隔成字符串
+    NSArray *RGBArr = [RGBValue componentsSeparatedByString:@" "];
+    if (RGBArr.count == 3) {
+        return 0.0;
+    }
+    float colorB = ((NSString *)RGBArr[3]).floatValue;
+    return colorB;
+}
+
+- (float)apha {
+    NSString *RGBValue = [NSString stringWithFormat:@"%@",self];
+    //将RGB值描述分隔成字符串
+    NSArray *RGBArr = [RGBValue componentsSeparatedByString:@" "];
+    if (RGBArr.count == 3) {
+        float colorA = ((NSString *)RGBArr[1]).floatValue;
+        return colorA;
+    }
+    float colorA = ((NSString *)RGBArr[4]).floatValue;
+    return colorA;
+}
+
+
+
++ (UIColor *)colorWithHexString:(NSString *)color {
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
     // String should be 6 or 8 characters

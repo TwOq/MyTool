@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (hex)
+@property (nonatomic, assign) float r;
+@property (nonatomic, assign) float g;
+@property (nonatomic, assign) float b;
+@property (nonatomic, assign) float apha;
+
 //十六进制生成颜色
 + (UIColor *)colorWithHexString:(NSString *)color;
 @end

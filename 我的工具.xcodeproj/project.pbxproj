@@ -11,15 +11,20 @@
 		6614DC8B1D489C6E006D3915 /* EmojiConvertor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6614DC8A1D489C6E006D3915 /* EmojiConvertor.m */; };
 		6614DC8E1D489CAE006D3915 /* LQRunTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6614DC8D1D489CAE006D3915 /* LQRunTimeTool.m */; };
 		6614DC901D489E9A006D3915 /* LQRunTimeToolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6614DC8F1D489E9A006D3915 /* LQRunTimeToolTest.m */; };
+		661B46721D51C43700D99A3B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661B46711D51C43700D99A3B /* MapKit.framework */; };
 		6622E3031D3CA54F005104C0 /* LQSingleClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6622E3021D3CA54F005104C0 /* LQSingleClass.m */; };
 		6622E3071D3CA85C005104C0 /* LQSingleClassTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6622E3061D3CA85C005104C0 /* LQSingleClassTest.m */; };
 		66269EEC1D41B5360047BC75 /* LQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66269EEB1D41B5360047BC75 /* LQNavigationController.m */; };
 		662B48C91D2B6559005F2F29 /* LQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 662B48C81D2B6559005F2F29 /* LQTextField.m */; };
 		662B48CC1D2B7D47005F2F29 /* LQButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 662B48CB1D2B7D47005F2F29 /* LQButton.m */; };
+		6633DA141D5B1DDA002B467A /* DispatchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6633DA131D5B1DDA002B467A /* DispatchTool.m */; };
 		666504431D2CAD360073752B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666504421D2CAD360073752B /* Accelerate.framework */; };
 		666621571D180B40009019F7 /* LQFileManagerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 666621561D180B40009019F7 /* LQFileManagerTool.m */; };
 		666AB2D61D1A63CD000507B8 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 666AB2D51D1A63CD000507B8 /* UIView+Extension.m */; };
 		667052E91D49CFAF00B817A0 /* LQModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 667052E81D49CFAF00B817A0 /* LQModelTest.m */; };
+		667052EC1D49E8E200B817A0 /* IDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 667052EB1D49E8E200B817A0 /* IDTool.m */; };
+		667052EE1D49EA4600B817A0 /* LQnormalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 667052ED1D49EA4600B817A0 /* LQnormalTest.m */; };
+		667052F21D49F88600B817A0 /* LQTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 667052F11D49F88600B817A0 /* LQTimer.m */; };
 		667DC6A31D19182B000AC396 /* LQKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 667DC6A21D19182B000AC396 /* LQKeyboardTool.m */; };
 		667DC6AC1D1940D0000AC396 /* LDNetGetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 667DC6AA1D1940D0000AC396 /* LDNetGetAddress.m */; };
 		66D5434B1D387B770010591B /* LQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D5434A1D387B770010591B /* LQModel.m */; };
@@ -60,6 +65,7 @@
 		66E322631D13A6E400064D07 /* ScanCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E3225F1D13A6E400064D07 /* ScanCodeView.m */; };
 		66E322641D13A6E400064D07 /* TradeKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E322611D13A6E400064D07 /* TradeKeyboard.m */; };
 		66E322671D13D63300064D07 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 66E322661D13D63300064D07 /* NSDate+Helper.m */; };
+		66F13C171D4F1F0600EE8218 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F13C161D4F1F0600EE8218 /* UIImage+GIF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +85,7 @@
 		6614DC8C1D489CAE006D3915 /* LQRunTimeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQRunTimeTool.h; sourceTree = "<group>"; };
 		6614DC8D1D489CAE006D3915 /* LQRunTimeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRunTimeTool.m; sourceTree = "<group>"; };
 		6614DC8F1D489E9A006D3915 /* LQRunTimeToolTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQRunTimeToolTest.m; sourceTree = "<group>"; };
+		661B46711D51C43700D99A3B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6622E3011D3CA54F005104C0 /* LQSingleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQSingleClass.h; sourceTree = "<group>"; };
 		6622E3021D3CA54F005104C0 /* LQSingleClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSingleClass.m; sourceTree = "<group>"; };
 		6622E3061D3CA85C005104C0 /* LQSingleClassTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQSingleClassTest.m; sourceTree = "<group>"; };
@@ -88,6 +95,8 @@
 		662B48C81D2B6559005F2F29 /* LQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTextField.m; sourceTree = "<group>"; };
 		662B48CA1D2B7D47005F2F29 /* LQButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQButton.h; sourceTree = "<group>"; };
 		662B48CB1D2B7D47005F2F29 /* LQButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQButton.m; sourceTree = "<group>"; };
+		6633DA121D5B1DDA002B467A /* DispatchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchTool.h; sourceTree = "<group>"; };
+		6633DA131D5B1DDA002B467A /* DispatchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchTool.m; sourceTree = "<group>"; };
 		6642543C1D3885470063AFDF /* 我的工具Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "我的工具Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		664254401D3885470063AFDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		666504421D2CAD360073752B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -96,6 +105,11 @@
 		666AB2D41D1A63CD000507B8 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		666AB2D51D1A63CD000507B8 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		667052E81D49CFAF00B817A0 /* LQModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQModelTest.m; sourceTree = "<group>"; };
+		667052EA1D49E8E200B817A0 /* IDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDTool.h; sourceTree = "<group>"; };
+		667052EB1D49E8E200B817A0 /* IDTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDTool.m; sourceTree = "<group>"; };
+		667052ED1D49EA4600B817A0 /* LQnormalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQnormalTest.m; sourceTree = "<group>"; };
+		667052F01D49F88600B817A0 /* LQTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQTimer.h; sourceTree = "<group>"; };
+		667052F11D49F88600B817A0 /* LQTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQTimer.m; sourceTree = "<group>"; };
 		667DC6A11D19182B000AC396 /* LQKeyboardTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQKeyboardTool.h; sourceTree = "<group>"; };
 		667DC6A21D19182B000AC396 /* LQKeyboardTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQKeyboardTool.m; sourceTree = "<group>"; };
 		667DC6A91D1940D0000AC396 /* LDNetGetAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetGetAddress.h; sourceTree = "<group>"; };
@@ -177,6 +191,8 @@
 		66E322611D13A6E400064D07 /* TradeKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeKeyboard.m; sourceTree = "<group>"; };
 		66E322651D13D63300064D07 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		66E322661D13D63300064D07 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		66F13C151D4F1F0600EE8218 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		66F13C161D4F1F0600EE8218 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661B46721D51C43700D99A3B /* MapKit.framework in Frameworks */,
 				666504431D2CAD360073752B /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +241,7 @@
 				6622E3061D3CA85C005104C0 /* LQSingleClassTest.m */,
 				6614DC8F1D489E9A006D3915 /* LQRunTimeToolTest.m */,
 				667052E81D49CFAF00B817A0 /* LQModelTest.m */,
+				667052ED1D49EA4600B817A0 /* LQnormalTest.m */,
 			);
 			path = "我的工具Tests";
 			sourceTree = "<group>";
@@ -250,6 +268,7 @@
 		66E321AF1D1391B900064D07 = {
 			isa = PBXGroup;
 			children = (
+				661B46711D51C43700D99A3B /* MapKit.framework */,
 				666504421D2CAD360073752B /* Accelerate.framework */,
 				66E321BA1D1391B900064D07 /* 我的工具 */,
 				6642543D1D3885470063AFDF /* 我的工具Tests */,
@@ -363,6 +382,8 @@
 		66E322431D13A6D700064D07 /* CategoryTool */ = {
 			isa = PBXGroup;
 			children = (
+				66F13C151D4F1F0600EE8218 /* UIImage+GIF.h */,
+				66F13C161D4F1F0600EE8218 /* UIImage+GIF.m */,
 				666AB2D41D1A63CD000507B8 /* UIView+Extension.h */,
 				666AB2D51D1A63CD000507B8 /* UIView+Extension.m */,
 				66E322651D13D63300064D07 /* NSDate+Helper.h */,
@@ -382,6 +403,10 @@
 		66E322501D13A6DF00064D07 /* ClassTool */ = {
 			isa = PBXGroup;
 			children = (
+				6633DA121D5B1DDA002B467A /* DispatchTool.h */,
+				6633DA131D5B1DDA002B467A /* DispatchTool.m */,
+				667052EA1D49E8E200B817A0 /* IDTool.h */,
+				667052EB1D49E8E200B817A0 /* IDTool.m */,
 				6614DC891D489C6E006D3915 /* EmojiConvertor.h */,
 				6614DC8A1D489C6E006D3915 /* EmojiConvertor.m */,
 				666621551D180B40009019F7 /* LQFileManagerTool.h */,
@@ -406,6 +431,8 @@
 		66E3225B1D13A6E400064D07 /* ViewTool */ = {
 			isa = PBXGroup;
 			children = (
+				667052F01D49F88600B817A0 /* LQTimer.h */,
+				667052F11D49F88600B817A0 /* LQTimer.m */,
 				662B48CA1D2B7D47005F2F29 /* LQButton.h */,
 				662B48CB1D2B7D47005F2F29 /* LQButton.m */,
 				662B48C71D2B6559005F2F29 /* LQTextField.h */,
@@ -474,6 +501,11 @@
 					};
 					66E321B71D1391B900064D07 = {
 						CreatedOnToolsVersion = 7.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -524,6 +556,7 @@
 				6622E3071D3CA85C005104C0 /* LQSingleClassTest.m in Sources */,
 				6614DC901D489E9A006D3915 /* LQRunTimeToolTest.m in Sources */,
 				667052E91D49CFAF00B817A0 /* LQModelTest.m in Sources */,
+				667052EE1D49EA4600B817A0 /* LQnormalTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +569,9 @@
 				66E321C31D1391B900064D07 /* ViewController.m in Sources */,
 				667DC6A31D19182B000AC396 /* LQKeyboardTool.m in Sources */,
 				66E3224F1D13A6D700064D07 /* UIImageView+UpdateImage.m in Sources */,
+				66F13C171D4F1F0600EE8218 /* UIImage+GIF.m in Sources */,
 				6614DC881D489C20006D3915 /* NSDictionary+Log.m in Sources */,
+				6633DA141D5B1DDA002B467A /* DispatchTool.m in Sources */,
 				66E322581D13A6DF00064D07 /* LQCheckTool.m in Sources */,
 				66E322341D13A07F00064D07 /* NSData+CommonCrypto.m in Sources */,
 				66E3225A1D13A6DF00064D07 /* LQDateTool.m in Sources */,
@@ -549,6 +584,7 @@
 				662B48C91D2B6559005F2F29 /* LQTextField.m in Sources */,
 				6614DC8B1D489C6E006D3915 /* EmojiConvertor.m in Sources */,
 				667DC6AC1D1940D0000AC396 /* LDNetGetAddress.m in Sources */,
+				667052F21D49F88600B817A0 /* LQTimer.m in Sources */,
 				66E322191D13932E00064D07 /* UIButton+WebCache.m in Sources */,
 				66E3224C1D13A6D700064D07 /* NSString+Implementation.m in Sources */,
 				66E322161D13932E00064D07 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -576,6 +612,7 @@
 				66E322171D13932E00064D07 /* SDWebImageManager.m in Sources */,
 				66E321BD1D1391B900064D07 /* main.m in Sources */,
 				66E322671D13D63300064D07 /* NSDate+Helper.m in Sources */,
+				667052EC1D49E8E200B817A0 /* IDTool.m in Sources */,
 				66E3224E1D13A6D700064D07 /* UIImage+Implementation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
